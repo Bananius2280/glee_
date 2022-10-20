@@ -360,7 +360,6 @@
 
   &__items {
     display: flex;
-    // justify-content: space-around;
     align-items: center;
     min-height: 170px;
     background-color: #fef7f0;
@@ -376,6 +375,7 @@
 
   &__item-one {
     border-right: 1px solid #e8e4df;
+
     &::before {
       content: '';
       background-image: url(../images/info-1.svg);
@@ -383,13 +383,14 @@
       height: 54px;
       margin-right: 25px;
       position: relative;
-        top: 10px;
+      top: 10px;
     }
   }
 
   &__item-two {
     padding: 65px 0;
     border-right: 1px solid #e8e4df;
+
     &::before {
       content: '';
       background-image: url(../images/info-2.svg);
@@ -433,14 +434,127 @@
   }
 }
 
-// .info__item-title__one::before {
+.shop {
+  padding: 75px 0 90px;
 
-//   content: '';
-//   background-image: url(../images/info-1.svg);
-//   width: 52px;
-//   height: 49px;
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
 
-// }
+
+.shop__top {
+  text-align: center;
+
+  &-menu__btn+.shop__top-menu__btn {
+    margin-left: 30px;
+  }
+
+  &-menu {
+    margin-bottom: 80px;
+  }
+}
+
+.shop__content {
+
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
+    text-align: center;
+  }
+
+  &-hover {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    display: flex;
+  }
+
+  &-item {
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 380px;
+    justify-content: space-around;
+
+    &:hover .shop__content-hover {
+      opacity: 1;
+      visibility: visible;
+      transition: all 1s;
+    }
+  }
+
+  &-img {
+    display: inline-block;
+  }
+
+  &-subtitle {
+    @extend %dmsans-500;
+    font-size: 16px;
+    color: #243f4d;
+    line-height: 40px;
+
+  }
+
+  &-text {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+
+
+  &-serch {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    margin-right: 18px;
+  }
+
+  &-cart {
+    background-color: $default;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    margin-right: 18px;
+  }
+
+  &-hert {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    position: relative;
+  }
+
+  &-hert__link {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &-serch-img,
+  &-cart-img,
+  &-hert-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+.mixitup-control-active {
+  color: #191919;
+}
 
 
 
