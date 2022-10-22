@@ -266,7 +266,7 @@
 }
 
 .slider-top {
-  max-width: 1770px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
 
@@ -555,6 +555,138 @@
 .mixitup-control-active {
   color: #191919;
 }
+
+.light {
+  padding: 100px 0 50px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    background-color: #feefe2;
+    align-items: center;
+    max-width: 870px;
+    width: 100%;
+    padding: 20px;
+    min-height: 390px;
+    justify-content: center;
+  }
+
+  &__item+.light__item {
+    margin-left: 30px;
+  }
+
+  &__item-title {
+    color: #243f4d;
+    max-width: 250px;
+    width: 100%;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+
+  &__item-text {
+    color: #243f4d;
+    max-width: 320px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  &__item-link {
+    background-color: transparent;
+    padding: 20px 22px;
+    color: #243f4d;
+    display: inline-block;
+    border: 1px solid #b3b7b5;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %rubik-500;
+    border-radius: 5px;
+
+  }
+
+  &__item-link__img {
+    margin-left: 45px;
+  }
+
+  &__item-img {
+    margin-top: -180px;
+    margin-right: 20px;
+  }
+}
+
+.selector {
+
+  &__title {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+}
+
+.selector__top {
+
+  &-menu {
+    text-align: center;
+  }
+
+  &-menu__btn+.selector__top-menu__btn {
+    margin-left: 30px;
+    margin-bottom: 80px;
+  }
+}
+
+.selector__content {
+
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 35px;
+    grid-column-gap: 30px;
+  }
+
+  &-item__left-title {
+    font-size: 20px;
+    color: #191919;
+    max-width: 175px;
+    width: 100%;
+    padding-top: 42px;
+    margin-bottom: 5px;
+  }
+
+  &-item__right {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  &-item__left {
+    position: absolute;
+    padding-left: 40px;
+    z-index: 4;
+  }
+
+}
+
+.video {
+  background-image: url(../images/video-link.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+
+}
+
+
 
 
 
