@@ -16,12 +16,14 @@ body {
 
 .container {
   max-width: 1800px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .container__small {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -38,4 +40,40 @@ body {
   font-size: 16px;
   color: #8b8b8b;
   padding: 0;
+}
+
+section.partners--login{
+  padding: 95px 0 90px;
+  margin-top: 0;
+}
+
+.breadcrumbs {
+  margin-top: 10px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__item {
+
+    &::after {
+      content: '/';
+    }
+
+    &:last-child {
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    margin: 0 8px;
+  }
 }

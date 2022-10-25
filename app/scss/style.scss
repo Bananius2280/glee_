@@ -780,7 +780,7 @@
   background-color: #fef7f0;
   padding: 265px 0 90px;
   margin-top: -175px;
-  
+
 
   &__items {
     display: flex;
@@ -788,7 +788,103 @@
     align-items: center;
   }
 
+}
 
+.top {
+  background-color: #edf1f4;
+  min-height: 125px;
+
+  &__title {
+    @extend %rubik-400;
+    color: #222933;
+    text-align: center;
+    font-size: 36px;
+    line-height: 24px;
+    padding-top: 35px;
+  }
+}
+
+
+.modal {
+padding: 120px 0;
+  &__container {
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__title-one,
+  &__title-two {
+    @extend %rubik-400;
+    font-size: 14px;
+    color: $title;
+    margin-bottom: 15px;
+  }
+
+  &__title-two {
+    margin-top: 28px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    min-height: 60px;
+    border: 3px solid #f6f6f6;
+    outline: none;
+    padding: 0 15px;
+    color: $title;
+  }
+
+  &__btn {
+    width: 100%;
+    background-color: $default;
+    color: #fff;
+    min-height: 60px;
+    margin: 37px 0;
+    @extend %rubik-500;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %rubik-400;
+    font-size: 14px;
+    color: $title;
+    padding-bottom: 35px;
+    border-bottom: 2px solid #f6f6f6;
+  }
+
+  &__text {
+    @extend %rubik-400;
+    font-size: 14px;
+    color: $title;
+    text-align: center;
+    margin-top: 33px;
+  }
+
+  &__link{
+    @extend %rubik-500;
+    font-size: 18px;
+    color: #243f4d;
+    border: 2px solid $default;
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
 }
 
 
