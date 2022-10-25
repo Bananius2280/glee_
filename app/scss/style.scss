@@ -806,7 +806,8 @@
 
 
 .modal {
-padding: 120px 0;
+  padding: 120px 0;
+
   &__container {
     max-width: 470px;
     width: 100%;
@@ -873,7 +874,7 @@ padding: 120px 0;
     margin-top: 33px;
   }
 
-  &__link{
+  &__link {
     @extend %rubik-500;
     font-size: 18px;
     color: #243f4d;
@@ -885,6 +886,81 @@ padding: 120px 0;
     align-items: center;
     margin-top: 25px;
   }
+}
+
+.info {
+  padding: 120px 0 60px;
+
+  &__title {
+    @extend %rubik-500;
+    font-size: 24px;
+    color: #243f4d;
+    margin: 75px 0 30px;
+  }
+
+  &__title-start {
+    margin-top: 0;
+  }
+
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+
+  &__text-end {
+    margin-bottom: 0;
+  }
+
+  &__text-1 {
+    display: flex;
+
+    &::before {
+      content: '01.';
+      margin-right: 15px;
+      margin-left: 5px;
+    }
+  }
+
+  &__text-2 {
+    display: flex;
+
+    &::before {
+      content: '02.';
+      margin-right: 15px;
+      margin-left: 5px;
+    }
+  }
+
+  &__text-3 {
+    display: flex;
+
+    &::before {
+      content: '03.';
+      margin-right: 15px;
+      margin-left: 5px;
+    }
+  }
+
+  &__text-4 {
+    display: flex;
+
+    &::before {
+      content: '04.';
+      margin-right: 15px;
+      margin-left: 5px;
+    }
+  }
+    &__text-5 {
+      display: flex;
+  
+      &::before {
+        content: '05.';
+        margin-right: 15px;
+        margin-left: 5px;
+      }
+    }
 }
 
 
