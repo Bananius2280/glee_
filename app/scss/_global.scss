@@ -7,7 +7,7 @@ body {
 body {
   @extend %dmsans-700;
   color: $default;
-  
+
 }
 
 .main {
@@ -42,7 +42,7 @@ body {
   padding: 0;
 }
 
-section.partners--login{
+section.partners--login {
   padding: 95px 0 90px;
   margin-top: 0;
 }
@@ -76,4 +76,40 @@ section.partners--login{
   &__link {
     margin: 0 8px;
   }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-top: 105px;
+
+  &__btn,
+  &__btn-next {
+    background-color: #fff;
+    border: 1px solid $default;
+    width: 50px;
+    height: 50px;
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #243f4d;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    &:hover{
+      background-color: $default;
+      color: #fff;
+    }
+  }
+
+  &__btn-next{
+    width: 75px;
+    margin-right: 0;
+}
+}
+.pagination__btn--active{
+  background-color: $default;
+    color: #fff;
 }

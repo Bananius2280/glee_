@@ -31,3 +31,11 @@ $text: #7b7b7b;
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
 }
+
+%checkbox-hidden {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
