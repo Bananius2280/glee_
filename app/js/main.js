@@ -139,8 +139,20 @@ $(function () {
     ratedFill: "#ffcc00",
     readOnly: true
   });
-  var mixer = mixitup('.shop__content-items');
-  var mixer = mixitup('.selector__content-items');
+  var mixer1 = mixitup('.shop__content-items');
+  var mixer2 = mixitup('.selector__content-items');
   
+
+  // $('#content1').mixItUp({
+  //   selectors: {
+  //     filter: '.shop__top-menu__btn'
+  //   }
+  // });
+
+  // $('#content2').mixItUp({
+  //   selectors: {
+  //     filter: '.selector__top-menu__btn'
+  //   }
+  // });
 });
 

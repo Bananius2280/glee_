@@ -82,6 +82,7 @@
       right: 0;
       z-index: 101;
       bottom: 50px;
+      border-radius: 30%;
     }
 
     &__content-block {
@@ -149,8 +150,8 @@
 
     &__header-btn {
       display: flex;
-      width: 25px;
-      height: 20px;
+          width: 27px;
+            height: 19px;
       border: none;
       background-color: transparent;
       justify-content: center;
